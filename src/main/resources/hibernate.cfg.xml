@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "hibernate-configuration-3.0.dtd" >
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">
+			org.hibernate.dialect.MySQL5Dialect
+		</property>
+
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:8889/Mokomes?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC
+		</property>
+		<property name="hibernate.connection.username">
+			jonas
+		</property>
+		<property name="hibernate.connection.password">
+			jonas
+		</property>
+
+		<mapping class="Egzaminai" />
+		<mapping class="Klausimai" />
+		<mapping class="Atsakymai" />
+		<mapping class="Sprendimas" />
+		<mapping class="Studentas" />
+		<mapping class="Admin" />
+
+	</session-factory>
+
+</hibernate-configuration>
